@@ -48,10 +48,10 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = '';
-$db['default']['database'] = 'granddutadb';
+$db['default']['hostname'] = 'ap-cdbr-azure-east-b.cloudapp.net';
+$db['default']['username'] = 'b2b8d84e16168d';
+$db['default']['password'] = 'e582c48b';
+$db['default']['database'] = 'grandduAtk6b6tF5';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = FALSE;
