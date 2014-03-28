@@ -300,16 +300,13 @@ class Infoplg extends CI_Controller {
 //		echo $pelangganbaris->PelKDGolongan;
 		
 		
-		$data['default']['nosl']=$pelangganbaris->PelNoSambungan;
-		$data['default']['nama']=$pelangganbaris->PelNamaPelanggan;
-		$data['default']['alamat']=$pelangganbaris->PelAlamatPelanggan;
-		$data['default']['wil']=$pelangganbaris->PelKDWilayah;
-		$data['default']['kdgol']=$pelangganbaris->PelKDGolongan;
-		$data['default']['tglpasang']=$pelangganbaris->PelTglPasang;
-		$data['default']['diapipa']=$pelangganbaris->PelDiameterPipa;
-		$data['default']['kdwm']=$pelangganbaris->PelKDWM;
-		$data['default']['nowm']=$pelangganbaris->PeNoWaterMeter;
-		$data['default']['status']=$pelangganbaris->PelStatus;		
+		$data['default']['nosl']=$pelangganbaris->idipkl;
+		$data['default']['nama']=$pelangganbaris->nama;
+		$data['default']['alamat']=$pelangganbaris->blok +' No. Kav. ' + $pelangganbaris->nokav;
+		$data['default']['wil']=$pelangganbaris->nohp;
+		$data['default']['kdgol']=$pelangganbaris->kdgol;
+		$data['default']['tglpasang']=$pelangganbaris->email;
+		$data['default']['diapipa']=$pelangganbaris->status;
 		
 		$this->load->view('template', $data);
 	}
